@@ -36,16 +36,16 @@ const App = () => (
   <Router>
     <div>
       <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/about">About</Link></li>
-        <li><Link to="/contact">Contact</Link></li>
+        <li><Link to="/mymtedata">Home</Link></li>
+        <li><Link to="/mymtedata/about">About</Link></li>
+        <li><Link to="/mymtedata/contact">Contact</Link></li>
       </ul>
 
       <hr/>
 
-      <Route exact path="/" component={Home}/>
-      <Route path="/about" component={About}/>
-      <Route path="/contact" component={Contact}/>
+      <Route exact path="/mymtedata" component={Home}/>
+      <Route path="/mymtedata/about" component={About}/>
+      <Route path="/mymtedata/contact" component={Contact}/>
     </div>
   </Router>
 )
