@@ -4,7 +4,7 @@ const port = 'process.env.PORT' || 5000;
 const path = require('path');
 const fs = require('fs')
 
-app.get('/', function(request, response) {
+app.get('mymetadata/', function(request, response) {
   console.log('Home page visited!');
   const filePath = path.resolve(__dirname, './build', 'index.html');
   fs.readFile(filePath, 'utf8', function (err,data) {
@@ -18,7 +18,7 @@ app.get('/', function(request, response) {
   });
 });
 
-app.get('/about', function(request, response) {
+app.get('mymetadata/about', function(request, response) {
   console.log('About page visited!');
   const filePath = path.resolve(__dirname, './build', 'index.html')
   fs.readFile(filePath, 'utf8', function (err,data) {
@@ -32,7 +32,7 @@ app.get('/about', function(request, response) {
   });
 });
 
-app.get('/contact', function(request, response) {
+app.get('mymetadata/contact', function(request, response) {
   console.log('Contact page visited!');
   const filePath = path.resolve(__dirname, './build', 'index.html')
   fs.readFile(filePath, 'utf8', function (err,data) {
