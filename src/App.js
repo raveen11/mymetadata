@@ -36,16 +36,16 @@ const App = () => (
   <Router>
     <div>
       <ul>
-        <li><Link to="/mymetadata">Home</Link></li>
-        <li><Link to="/mymetadata/about">About</Link></li>
-        <li><Link to="/mymetadata/contact">Contact</Link></li>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/about">About</Link></li>
+        <li><Link to="/contact">Contact</Link></li>
       </ul>
 
       <hr/>
 
-      <Route exact path="/mymetadata" component={Home}/>
-      <Route path="/mymetadata/about" component={About}/>
-      <Route path="/mymetadata/contact" component={Contact}/>
+      <Route exact path="/" component={Home}/>
+      <Route path="/about" component={About}/>
+      <Route path="/contact" component={Contact}/>
     </div>
   </Router>
 )
