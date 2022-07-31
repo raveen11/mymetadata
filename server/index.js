@@ -13,7 +13,7 @@ app.use(express.static(
     { maxAge: '30d' },
 ));
 // here we serve the index.html page
-app.get('/*', (req, res, next) => {
+app.get('/about', (req, res, next) => {
     fs.readFile(indexPath, 'utf8', (err, htmlData) => {
         if (err) {
             console.error('Error during file reading', err);
