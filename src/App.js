@@ -5,9 +5,15 @@ import {
   Link
 } from 'react-router-dom'
 
+import { Helmet } from 'react-helmet'
+
 const Home = () => (
   <div>
     <h2>Home</h2>
+    <Helmet>
+      <title>Hello title</title>
+               <meta name="description" content="Lorem ipsum dolor sit amet" />
+ </Helmet>
     <p>
       This is the home page!
     </p>
