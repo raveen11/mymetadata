@@ -39,20 +39,21 @@ const Contact = ({ match }) => (
 )
 
 const App = () => (
-  <Router>
-    <div>
-      <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/about">About</Link></li>
-        <li><Link to="/contact">Contact</Link></li>
-      </ul>
+  // <Router>
+  //   <div>
+  //     <ul>
+  //       <li><Link to="/">Home</Link></li>
+  //       <li><Link to="/about">About</Link></li>
+  //       <li><Link to="/contact">Contact</Link></li>
+  //     </ul>
 
-      <hr/>
+  //     <hr/>
 
-      <Route exact path="/" component={Home}/>
-      <Route path="/about" component={About}/>
-      <Route path="/contact" component={Contact}/>
-    </div>
-  </Router>
+  //     <Route exact path="/" component={Home}/>
+  //     <Route path="/about" component={About}/>
+  //     <Route path="/contact" component={Contact}/>
+  //   </div>
+  // </Router>
+  <div>Hello</div>
 )
 export default App;
