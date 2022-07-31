@@ -22,7 +22,7 @@ app.get('/post?', (req, res, next) => {
         // get post info
         const postId = req.query.id;
         const post = getPostById(postId);
-        if(!post) return res.status(404).send("Post not found");
+        // if(!post) return res.status(404).send("Post not found");
 
         // inject meta tags
         htmlData = htmlData.replace(
